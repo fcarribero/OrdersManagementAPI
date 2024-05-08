@@ -1,0 +1,1117 @@
+{
+	"info": {
+		"_postman_id": "7ee88edb-f29d-4f81-b609-dc3987e934de",
+		"name": "Orders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1740622"
+	},
+	"item": [
+		{
+			"name": "Create Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\r\n            \"sku\": \"22253342\",\r\n            \"quantity\": 40.08,\r\n            \"price\": 26.75,\r\n            \"discount\": 15,\r\n            \"total\": 1057.14\r\n        },\r\n        {\r\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\r\n            \"sku\": \"61297793\",\r\n            \"quantity\": 76.7,\r\n            \"price\": 4.38,\r\n            \"discount\": 20,\r\n            \"total\": 315.95\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Order",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\r\n            \"sku\": \"22253342\",\r\n            \"quantity\": 40.08,\r\n            \"price\": 26.75,\r\n            \"discount\": 15,\r\n            \"total\": 1057.14\r\n        },\r\n        {\r\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\r\n            \"sku\": \"61297793\",\r\n            \"quantity\": 76.7,\r\n            \"price\": 4.38,\r\n            \"discount\": 20,\r\n            \"total\": 315.95\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 20:09:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 20:09:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"uuid\": \"b7999d07-1505-42b6-8f25-6fd40ee8787b\",\n    \"status\": \"completed\",\n    \"created_at\": \"2024-05-08 20:09:48\",\n    \"updated_at\": \"2024-05-08 20:09:48\",\n    \"deleted_at\": null,\n    \"customer_detail\": {\n        \"external_id\": null,\n        \"name\": \"Wilfredo Raynor\",\n        \"email\": \"rernser@example.net\",\n        \"phone\": \"1-423-699-2753\"\n    },\n    \"invoice_detail\": {\n        \"name\": \"Miss Melba Carroll II\",\n        \"email\": \"colin.nader@example.com\",\n        \"phone\": \"+13238285918\",\n        \"tax_id\": \"37694078624\"\n    },\n    \"shipping_address\": {\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\n        \"apartment_number\": \"37552\",\n        \"city\": \"Lednerchester\",\n        \"state\": \"Demarcoville\",\n        \"zip\": \"41803\",\n        \"country\": \"Jersey\"\n    },\n    \"products\": [\n        {\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\n            \"sku\": \"22253342\",\n            \"quantity\": 40.08,\n            \"price\": 26.75,\n            \"discount\": 15,\n            \"total\": 1057.14\n        },\n        {\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\n            \"sku\": \"61297793\",\n            \"quantity\": 76.7,\n            \"price\": 4.38,\n            \"discount\": 20,\n            \"total\": 315.95\n        }\n    ]\n}"
+				},
+				{
+					"name": "Validation Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:52:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:52:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"products\": [\n            \"The products field is required.\"\n        ]\n    },\n    \"message\": \"Validation failed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\r\n            \"sku\": \"22253342\",\r\n            \"quantity\": 40.08,\r\n            \"price\": 26.75,\r\n            \"discount\": 15,\r\n            \"total\": 1057.14\r\n        },\r\n        {\r\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\r\n            \"sku\": \"61297793\",\r\n            \"quantity\": 76.7,\r\n            \"price\": 4.38,\r\n            \"discount\": 20,\r\n            \"total\": 315.95\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/50e40d10-f906-4e34-b57f-d63230f9efef",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"50e40d10-f906-4e34-b57f-d63230f9efef"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Order",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "api-key"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\r\n            \"sku\": \"22253342\",\r\n            \"quantity\": 40.08,\r\n            \"price\": 26.75,\r\n            \"discount\": 15,\r\n            \"total\": 1057.14\r\n        },\r\n        {\r\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\r\n            \"sku\": \"61297793\",\r\n            \"quantity\": 76.7,\r\n            \"price\": 4.38,\r\n            \"discount\": 20,\r\n            \"total\": 315.95\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/6d39c234-8b4c-464b-b6e5-ca8cf11096ad",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"6d39c234-8b4c-464b-b6e5-ca8cf11096ad"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:49:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:49:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"uuid\": \"6d39c234-8b4c-464b-b6e5-ca8cf11096ad\",\n    \"status\": \"completed\",\n    \"created_at\": \"2024-05-08 19:37:57\",\n    \"updated_at\": \"2024-05-08 19:37:57\",\n    \"deleted_at\": null,\n    \"customer_detail\": {\n        \"external_id\": null,\n        \"name\": \"Wilfredo Raynor\",\n        \"email\": \"rernser@example.net\",\n        \"phone\": \"1-423-699-2753\"\n    },\n    \"invoice_detail\": {\n        \"name\": \"Miss Melba Carroll II\",\n        \"email\": \"colin.nader@example.com\",\n        \"phone\": \"+13238285918\",\n        \"tax_id\": \"37694078624\"\n    },\n    \"shipping_address\": {\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\n        \"apartment_number\": \"37552\",\n        \"city\": \"Lednerchester\",\n        \"state\": \"Demarcoville\",\n        \"zip\": \"41803\",\n        \"country\": \"Jersey\"\n    },\n    \"products\": [\n        {\n            \"description\": \"Consequatur doloremque id earum cum praesentium.\",\n            \"sku\": \"22253342\",\n            \"quantity\": 40.08,\n            \"price\": 26.75,\n            \"discount\": 15,\n            \"total\": 1057.14\n        },\n        {\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\n            \"sku\": \"61297793\",\n            \"quantity\": 76.7,\n            \"price\": 4.38,\n            \"discount\": 20,\n            \"total\": 315.95\n        }\n    ]\n}"
+				},
+				{
+					"name": "Validation Error",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"completed\",\r\n    \"created_at\": \"2024-05-08 19:37:57\",\r\n    \"updated_at\": \"2024-05-08 19:37:57\",\r\n    \"deleted_at\": null,\r\n    \"customer_detail\": {\r\n        \"external_id\": null,\r\n        \"name\": \"Wilfredo Raynor\",\r\n        \"email\": \"rernser@example.net\",\r\n        \"phone\": \"1-423-699-2753\"\r\n    },\r\n    \"invoice_detail\": {\r\n        \"name\": \"Miss Melba Carroll II\",\r\n        \"email\": \"colin.nader@example.com\",\r\n        \"phone\": \"+13238285918\",\r\n        \"tax_id\": \"37694078624\"\r\n    },\r\n    \"shipping_address\": {\r\n        \"address\": \"6837 Wilburn Inlet\\nNew Trystan, RI 01893-0432\",\r\n        \"apartment_number\": \"37552\",\r\n        \"city\": \"Lednerchester\",\r\n        \"state\": \"Demarcoville\",\r\n        \"zip\": \"41803\",\r\n        \"country\": \"Jersey\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"description\": \"\",\r\n            \"sku\": \"22253342\",\r\n            \"quantity\": 40.08,\r\n            \"price\": 26.75,\r\n            \"discount\": 15,\r\n            \"total\": 1057.14\r\n        },\r\n        {\r\n            \"description\": \"Voluptate cum repellat voluptates nihil.\",\r\n            \"sku\": \"61297793\",\r\n            \"quantity\": 76.7,\r\n            \"price\": 4.38,\r\n            \"discount\": 20,\r\n            \"total\": 315.95\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/6d39c234-8b4c-464b-b6e5-ca8cf11096ad",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"6d39c234-8b4c-464b-b6e5-ca8cf11096ad"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:50:30 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:50:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": {\n        \"products.0.description\": [\n            \"The products.0.description field is required.\"\n        ]\n    },\n    \"message\": \"Validation failed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					]
+				},
+				"description": "##### Optional query parameters\n\n| Parameter | **Description** |\n| --- | --- |\n| deleted | Valores posibles:  <br>  <br>\\- 0: (Valor por defecto) Se listan registros normalmente  <br>\\- 1: Se listan solo registros eliminados |\n| limit | Restringe la consulta a N cantidad de registros |\n| offset | Número de registros a saltar al principio de la consulta |\n| sku | Filtra órdenes por SKU |\n| tax_id | Filtra órdenes por el tax_id del comprador |"
+			},
+			"response": [
+				{
+					"name": "List Orders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "api-key"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:35:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:35:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"fd678060-38fb-4a76-ad3b-446fe366dc27\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Dion Bergnaum MD\",\n            \"email\": \"ldickens@example.com\",\n            \"phone\": \"682.685.5153\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Marcella Erdman II\",\n            \"email\": \"cstamm@example.com\",\n            \"phone\": \"848-942-4373\",\n            \"tax_id\": \"65773297253\"\n        },\n        \"shipping_address\": {\n            \"address\": \"419 Janick Street Apt. 388\\nGreenholttown, MT 92427-1885\",\n            \"apartment_number\": \"926\",\n            \"city\": \"Trompborough\",\n            \"state\": \"Lake Norbertoside\",\n            \"zip\": \"56497\",\n            \"country\": \"Italy\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Rerum asperiores atque culpa atque totam non.\",\n                \"sku\": \"21932529\",\n                \"quantity\": 43.17,\n                \"price\": 42.36,\n                \"discount\": 5,\n                \"total\": 1823.68\n            },\n            {\n                \"description\": \"Dolores ea quibusdam consequatur minima assumenda et ut.\",\n                \"sku\": \"68248391\",\n                \"quantity\": 87.74,\n                \"price\": 47.37,\n                \"discount\": 15,\n                \"total\": 4141.24\n            }\n        ]\n    },\n    {\n        \"uuid\": \"be406a2f-4b75-4c4b-bf0b-9bc079cdad3c\",\n        \"status\": \"completed\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Alexandre Ankunding\",\n            \"email\": \"schimmel.grady@example.net\",\n            \"phone\": \"+1.320.940.7172\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Alayna Gutkowski\",\n            \"email\": \"obartell@example.net\",\n            \"phone\": \"+18592827620\",\n            \"tax_id\": \"69127090752\"\n        },\n        \"shipping_address\": {\n            \"address\": \"582 Zulauf Extension Suite 053\\nNorth Adonisfort, OH 68985\",\n            \"apartment_number\": \"93485\",\n            \"city\": \"North Harveyville\",\n            \"state\": \"Schillerborough\",\n            \"zip\": \"91886\",\n            \"country\": \"Nauru\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Id et ipsa dolore ea nesciunt atque id.\",\n                \"sku\": \"46150014\",\n                \"quantity\": 40.71,\n                \"price\": 96.69,\n                \"discount\": 15,\n                \"total\": 3921.25\n            },\n            {\n                \"description\": \"Autem a nihil non illo.\",\n                \"sku\": \"66207925\",\n                \"quantity\": 15.71,\n                \"price\": 57.6,\n                \"discount\": 10,\n                \"total\": 894.9\n            },\n            {\n                \"description\": \"Dolores molestias cum dolore sed.\",\n                \"sku\": \"27235774\",\n                \"quantity\": 90.72,\n                \"price\": 91.98,\n                \"discount\": 25,\n                \"total\": 8319.43\n            },\n            {\n                \"description\": \"Cumque aut fuga quidem odit provident.\",\n                \"sku\": \"58224117\",\n                \"quantity\": 8.85,\n                \"price\": 87.67,\n                \"discount\": 10,\n                \"total\": 765.88\n            },\n            {\n                \"description\": \"Voluptatibus praesentium ullam quae.\",\n                \"sku\": \"96791395\",\n                \"quantity\": 14.09,\n                \"price\": 60.16,\n                \"discount\": 0,\n                \"total\": 847.65\n            },\n            {\n                \"description\": \"Esse exercitationem odio magnam laborum odit.\",\n                \"sku\": \"42640882\",\n                \"quantity\": 43.78,\n                \"price\": 90.01,\n                \"discount\": 15,\n                \"total\": 3925.64\n            }\n        ]\n    },\n    {\n        \"uuid\": \"561fa701-820f-43e9-8105-56b4ad849ac8\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Ms. Nelda Beier\",\n            \"email\": \"amcclure@example.org\",\n            \"phone\": \"(551) 752-1543\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Rebeca Schuster\",\n            \"email\": \"jarret.muller@example.org\",\n            \"phone\": \"239.382.0153\",\n            \"tax_id\": \"53437718420\"\n        },\n        \"shipping_address\": {\n            \"address\": \"329 Gracie Shoals Suite 519\\nKlingburgh, GA 56946-3572\",\n            \"apartment_number\": \"29887\",\n            \"city\": \"West Dollyview\",\n            \"state\": \"Lake Eliland\",\n            \"zip\": \"87791-5245\",\n            \"country\": \"Lesotho\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Optio voluptate molestiae qui nesciunt repudiandae eius.\",\n                \"sku\": \"44308363\",\n                \"quantity\": 64.35,\n                \"price\": 30.28,\n                \"discount\": 0,\n                \"total\": 1948.52\n            }\n        ]\n    },\n    {\n        \"uuid\": \"14701933-07fd-49be-9850-b5f265be4639\",\n        \"status\": \"completed\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Neoma Grady\",\n            \"email\": \"bterry@example.org\",\n            \"phone\": \"262.461.8681\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Mr. Wilhelm Deckow Jr.\",\n            \"email\": \"allie83@example.net\",\n            \"phone\": \"1-612-823-0189\",\n            \"tax_id\": \"38543093101\"\n        },\n        \"shipping_address\": {\n            \"address\": \"30012 Tremblay Spring Suite 954\\nEloisashire, HI 47916\",\n            \"apartment_number\": \"1905\",\n            \"city\": \"Lake Elzashire\",\n            \"state\": \"Carissabury\",\n            \"zip\": \"73739\",\n            \"country\": \"Azerbaijan\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Sed explicabo vel ipsum placeat maxime voluptatem veniam.\",\n                \"sku\": \"88684782\",\n                \"quantity\": 40.35,\n                \"price\": 71.19,\n                \"discount\": 0,\n                \"total\": 2872.52\n            }\n        ]\n    },\n    {\n        \"uuid\": \"afb17105-fb0d-4e8d-8f95-36cf07595ea5\",\n        \"status\": \"cancelled\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Timmy Buckridge\",\n            \"email\": \"lessie83@example.org\",\n            \"phone\": \"909-628-4951\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Nikolas Sanford\",\n            \"email\": \"mturner@example.org\",\n            \"phone\": \"1-757-926-3302\",\n            \"tax_id\": \"55165028781\"\n        },\n        \"shipping_address\": {\n            \"address\": \"117 Travis Vista Apt. 158\\nDariusland, WV 42287-9466\",\n            \"apartment_number\": \"649\",\n            \"city\": \"New Rogerview\",\n            \"state\": \"New Karl\",\n            \"zip\": \"66945-8454\",\n            \"country\": \"Cameroon\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Ipsa quasi excepturi sint magnam.\",\n                \"sku\": \"38332089\",\n                \"quantity\": 55.29,\n                \"price\": 58,\n                \"discount\": 0,\n                \"total\": 3206.82\n            },\n            {\n                \"description\": \"Adipisci tenetur ut et minima nihil explicabo aut.\",\n                \"sku\": \"31154739\",\n                \"quantity\": 53.8,\n                \"price\": 11.62,\n                \"discount\": 0,\n                \"total\": 625.16\n            },\n            {\n                \"description\": \"Sit nemo nulla veniam est impedit pariatur.\",\n                \"sku\": \"12559286\",\n                \"quantity\": 84.84,\n                \"price\": 57.43,\n                \"discount\": 0,\n                \"total\": 4872.36\n            },\n            {\n                \"description\": \"Nulla explicabo quod aut vero quo tempore pariatur voluptates.\",\n                \"sku\": \"23011074\",\n                \"quantity\": 52.58,\n                \"price\": 56.68,\n                \"discount\": 25,\n                \"total\": 2955.23\n            },\n            {\n                \"description\": \"Expedita nam omnis qui nemo eveniet optio libero suscipit.\",\n                \"sku\": \"15265601\",\n                \"quantity\": 44.51,\n                \"price\": 95.63,\n                \"discount\": 5,\n                \"total\": 4251.49\n            },\n            {\n                \"description\": \"Ab quaerat ullam molestias et adipisci ut omnis.\",\n                \"sku\": \"78215175\",\n                \"quantity\": 26.53,\n                \"price\": 28.55,\n                \"discount\": 0,\n                \"total\": 757.43\n            },\n            {\n                \"description\": \"Quaerat quibusdam similique molestias sed.\",\n                \"sku\": \"47828860\",\n                \"quantity\": 82.34,\n                \"price\": 70.42,\n                \"discount\": 0,\n                \"total\": 5798.38\n            },\n            {\n                \"description\": \"Labore sit eos ab tempore amet.\",\n                \"sku\": \"34279735\",\n                \"quantity\": 29.05,\n                \"price\": 33.13,\n                \"discount\": 15,\n                \"total\": 947.43\n            }\n        ]\n    },\n    {\n        \"uuid\": \"36b8eb0b-5a8a-4ab0-b09f-121cbaa01bd8\",\n        \"status\": \"cancelled\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Elizabeth Boyer\",\n            \"email\": \"torp.bobby@example.net\",\n            \"phone\": \"+1-616-916-2406\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Ms. Jackie Huels\",\n            \"email\": \"tommie40@example.org\",\n            \"phone\": \"1-279-516-3544\",\n            \"tax_id\": \"18006345023\"\n        },\n        \"shipping_address\": {\n            \"address\": \"2492 Lindgren Expressway Suite 469\\nTrantowview, SD 15687-0064\",\n            \"apartment_number\": \"8992\",\n            \"city\": \"Rennerside\",\n            \"state\": \"Aufderharshire\",\n            \"zip\": \"69749-5814\",\n            \"country\": \"Netherlands Antilles\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Laudantium itaque nesciunt iste expedita.\",\n                \"sku\": \"52186644\",\n                \"quantity\": 97.99,\n                \"price\": 13.05,\n                \"discount\": 0,\n                \"total\": 1278.77\n            },\n            {\n                \"description\": \"Ut assumenda ut ex eos expedita et.\",\n                \"sku\": \"26756191\",\n                \"quantity\": 1.13,\n                \"price\": 6.47,\n                \"discount\": 0,\n                \"total\": 7.31\n            },\n            {\n                \"description\": \"Ratione perferendis qui eius eius inventore non ipsa.\",\n                \"sku\": \"99999446\",\n                \"quantity\": 10.14,\n                \"price\": 27.67,\n                \"discount\": 30,\n                \"total\": 250.57\n            },\n            {\n                \"description\": \"Enim excepturi nostrum est aut neque.\",\n                \"sku\": \"14307509\",\n                \"quantity\": 51.44,\n                \"price\": 86.54,\n                \"discount\": 0,\n                \"total\": 4451.62\n            },\n            {\n                \"description\": \"Perferendis nihil voluptatem rerum eligendi fugit.\",\n                \"sku\": \"54017360\",\n                \"quantity\": 45.79,\n                \"price\": 39.95,\n                \"discount\": 0,\n                \"total\": 1829.31\n            },\n            {\n                \"description\": \"Alias ea tempore animi.\",\n                \"sku\": \"19871777\",\n                \"quantity\": 66.03,\n                \"price\": 4.14,\n                \"discount\": 0,\n                \"total\": 273.36\n            }\n        ]\n    },\n    {\n        \"uuid\": \"14bbf495-60c2-42db-8309-b8b6603bbd98\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Dr. Zena Abshire\",\n            \"email\": \"nklein@example.org\",\n            \"phone\": \"+1-360-851-9894\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Clifton Fay\",\n            \"email\": \"rogahn.theron@example.com\",\n            \"phone\": \"(325) 909-1011\",\n            \"tax_id\": \"06214537869\"\n        },\n        \"shipping_address\": {\n            \"address\": \"3881 Priscilla Fields Apt. 836\\nLake Erwintown, MN 58831\",\n            \"apartment_number\": \"15223\",\n            \"city\": \"Runtestad\",\n            \"state\": \"Cassinton\",\n            \"zip\": \"56166\",\n            \"country\": \"Guam\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Dolorem exercitationem voluptatum mollitia.\",\n                \"sku\": \"61856846\",\n                \"quantity\": 74.47,\n                \"price\": 16.93,\n                \"discount\": 0,\n                \"total\": 1260.78\n            }\n        ]\n    },\n    {\n        \"uuid\": \"c2102002-8310-4c92-a6b8-9a9e6b8bb134\",\n        \"status\": \"cancelled\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Jeremy Streich MD\",\n            \"email\": \"retha14@example.org\",\n            \"phone\": \"+1-832-644-1699\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Dashawn Schimmel\",\n            \"email\": \"okohler@example.net\",\n            \"phone\": \"(872) 699-5442\",\n            \"tax_id\": \"28508699701\"\n        },\n        \"shipping_address\": {\n            \"address\": \"4314 Prosacco Ports Suite 720\\nWest Meggie, OK 32005\",\n            \"apartment_number\": \"447\",\n            \"city\": \"New Annie\",\n            \"state\": \"Connellychester\",\n            \"zip\": \"93941\",\n            \"country\": \"Indonesia\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Tenetur saepe tempore culpa enim.\",\n                \"sku\": \"77694674\",\n                \"quantity\": 17.71,\n                \"price\": 10.43,\n                \"discount\": 0,\n                \"total\": 184.72\n            },\n            {\n                \"description\": \"Illum perspiciatis natus ut dolore.\",\n                \"sku\": \"94446569\",\n                \"quantity\": 6.01,\n                \"price\": 58.62,\n                \"discount\": 0,\n                \"total\": 352.31\n            },\n            {\n                \"description\": \"Harum distinctio fugiat laudantium saepe corrupti autem.\",\n                \"sku\": \"49671361\",\n                \"quantity\": 69.51,\n                \"price\": 49.28,\n                \"discount\": 0,\n                \"total\": 3425.45\n            },\n            {\n                \"description\": \"Molestiae et non eveniet quibusdam.\",\n                \"sku\": \"16603248\",\n                \"quantity\": 30.7,\n                \"price\": 81.13,\n                \"discount\": 0,\n                \"total\": 2490.69\n            },\n            {\n                \"description\": \"Ut est voluptate voluptas impedit soluta officiis repellat eius.\",\n                \"sku\": \"22293261\",\n                \"quantity\": 29.69,\n                \"price\": 46.19,\n                \"discount\": 10,\n                \"total\": 1361.38\n            },\n            {\n                \"description\": \"Occaecati repudiandae optio aut sunt et.\",\n                \"sku\": \"55150617\",\n                \"quantity\": 44.86,\n                \"price\": 75.83,\n                \"discount\": 0,\n                \"total\": 3401.73\n            }\n        ]\n    },\n    {\n        \"uuid\": \"02f9a9b2-f6ba-4cec-8ac4-c7b1d5292e8c\",\n        \"status\": \"cancelled\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Ward Cole\",\n            \"email\": \"hodkiewicz.vada@example.org\",\n            \"phone\": \"732.240.8231\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Koby Prohaska\",\n            \"email\": \"lelah96@example.com\",\n            \"phone\": \"1-573-628-6457\",\n            \"tax_id\": \"62731079591\"\n        },\n        \"shipping_address\": {\n            \"address\": \"6882 Austen Mill\\nBoehmview, WY 17979-7715\",\n            \"apartment_number\": \"55850\",\n            \"city\": \"Flatleybury\",\n            \"state\": \"Connellyfurt\",\n            \"zip\": \"86169\",\n            \"country\": \"Netherlands\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Fuga ducimus magnam impedit cum minima est consequatur.\",\n                \"sku\": \"63238071\",\n                \"quantity\": 17.19,\n                \"price\": 9.49,\n                \"discount\": 15,\n                \"total\": 148.13\n            },\n            {\n                \"description\": \"Laborum facere ipsa et molestiae quidem quaerat.\",\n                \"sku\": \"35317326\",\n                \"quantity\": 96.42,\n                \"price\": 55.27,\n                \"discount\": 0,\n                \"total\": 5329.13\n            },\n            {\n                \"description\": \"Quisquam vel et quis molestiae rerum odio laborum.\",\n                \"sku\": \"76360299\",\n                \"quantity\": 39.51,\n                \"price\": 43.1,\n                \"discount\": 0,\n                \"total\": 1702.88\n            },\n            {\n                \"description\": \"Asperiores nemo cum illo recusandae nihil.\",\n                \"sku\": \"39278143\",\n                \"quantity\": 58.1,\n                \"price\": 9.09,\n                \"discount\": 15,\n                \"total\": 513.13\n            },\n            {\n                \"description\": \"Provident voluptatem id omnis.\",\n                \"sku\": \"93745868\",\n                \"quantity\": 67.79,\n                \"price\": 23.78,\n                \"discount\": 25,\n                \"total\": 1587.05\n            },\n            {\n                \"description\": \"Vel omnis dolores est cumque consectetur aliquam.\",\n                \"sku\": \"40650017\",\n                \"quantity\": 6.5,\n                \"price\": 28.01,\n                \"discount\": 10,\n                \"total\": 172.07\n            },\n            {\n                \"description\": \"Voluptates illum beatae vel enim.\",\n                \"sku\": \"76693842\",\n                \"quantity\": 91.9,\n                \"price\": 12.39,\n                \"discount\": 0,\n                \"total\": 1138.64\n            },\n            {\n                \"description\": \"Id dolorum et debitis nemo cumque et quisquam sapiente.\",\n                \"sku\": \"85339774\",\n                \"quantity\": 17.28,\n                \"price\": 53.11,\n                \"discount\": 0,\n                \"total\": 917.74\n            }\n        ]\n    },\n    {\n        \"uuid\": \"c2ebcc37-ce1f-431f-85f4-6dab6f928045\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:31:58\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Magdalen Schuppe\",\n            \"email\": \"elangosh@example.net\",\n            \"phone\": \"269.361.5723\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Mercedes Abbott\",\n            \"email\": \"addie98@example.com\",\n            \"phone\": \"+1 (520) 997-8175\",\n            \"tax_id\": \"12805758217\"\n        },\n        \"shipping_address\": {\n            \"address\": \"3084 Edwardo Plains Suite 139\\nLake Oswaldoview, UT 56227\",\n            \"apartment_number\": \"8500\",\n            \"city\": \"Nikolausstad\",\n            \"state\": \"Cronahaven\",\n            \"zip\": \"97110-1796\",\n            \"country\": \"Mozambique\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Itaque magni sit voluptate veniam harum.\",\n                \"sku\": \"11183988\",\n                \"quantity\": 74.39,\n                \"price\": 18.82,\n                \"discount\": 25,\n                \"total\": 1375.02\n            },\n            {\n                \"description\": \"Quaerat eum unde nulla voluptatem voluptatem accusantium incidunt necessitatibus.\",\n                \"sku\": \"48610619\",\n                \"quantity\": 37.21,\n                \"price\": 40.99,\n                \"discount\": 0,\n                \"total\": 1525.24\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "Get deleted orders",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders?deleted=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:37:02 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:37:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"561fa701-820f-43e9-8105-56b4ad849ac8\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:31:58\",\n        \"updated_at\": \"2024-05-08 19:36:47\",\n        \"deleted_at\": \"2024-05-08 19:36:47\",\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Ms. Nelda Beier\",\n            \"email\": \"amcclure@example.org\",\n            \"phone\": \"(551) 752-1543\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Rebeca Schuster\",\n            \"email\": \"jarret.muller@example.org\",\n            \"phone\": \"239.382.0153\",\n            \"tax_id\": \"53437718420\"\n        },\n        \"shipping_address\": {\n            \"address\": \"329 Gracie Shoals Suite 519\\nKlingburgh, GA 56946-3572\",\n            \"apartment_number\": \"29887\",\n            \"city\": \"West Dollyview\",\n            \"state\": \"Lake Eliland\",\n            \"zip\": \"87791-5245\",\n            \"country\": \"Lesotho\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Optio voluptate molestiae qui nesciunt repudiandae eius.\",\n                \"sku\": \"44308363\",\n                \"quantity\": 64.35,\n                \"price\": 30.28,\n                \"discount\": 0,\n                \"total\": 1948.52\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "Paginated results",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders?limit=10&offset=10",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "offset",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:42:50 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:42:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "X-Total-Count",
+							"value": "100"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"d078487d-b28a-40df-a7e3-6b05768bedc2\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Keyshawn Donnelly\",\n            \"email\": \"juwan.waters@example.com\",\n            \"phone\": \"914.566.3486\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Jesus Gottlieb\",\n            \"email\": \"tnader@example.org\",\n            \"phone\": \"+19159028102\",\n            \"tax_id\": \"20572635672\"\n        },\n        \"shipping_address\": {\n            \"address\": \"1190 Bechtelar Dale Suite 666\\nTremblayshire, AR 26817-2992\",\n            \"apartment_number\": \"650\",\n            \"city\": \"New Coltenborough\",\n            \"state\": \"Port Holdenborough\",\n            \"zip\": \"64768-5417\",\n            \"country\": \"Burundi\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Et voluptas et totam alias aut.\",\n                \"sku\": \"80516698\",\n                \"quantity\": 47.58,\n                \"price\": 88.66,\n                \"discount\": 0,\n                \"total\": 4218.44\n            },\n            {\n                \"description\": \"Ea occaecati dolore ipsum et rerum.\",\n                \"sku\": \"92505162\",\n                \"quantity\": 15.28,\n                \"price\": 36.31,\n                \"discount\": 0,\n                \"total\": 554.82\n            },\n            {\n                \"description\": \"Laboriosam est saepe placeat saepe fuga.\",\n                \"sku\": \"48238590\",\n                \"quantity\": 4.28,\n                \"price\": 16.35,\n                \"discount\": 0,\n                \"total\": 69.98\n            }\n        ]\n    },\n    {\n        \"uuid\": \"993cd823-38ba-4196-9586-9a5428726ee9\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Issac Orn\",\n            \"email\": \"carolyne.gleichner@example.net\",\n            \"phone\": \"732.321.6029\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Aric Schaefer\",\n            \"email\": \"yziemann@example.com\",\n            \"phone\": \"(618) 440-9234\",\n            \"tax_id\": \"09950808587\"\n        },\n        \"shipping_address\": {\n            \"address\": \"8288 Bennie Court Apt. 045\\nCandacemouth, CA 17120-9203\",\n            \"apartment_number\": \"585\",\n            \"city\": \"East Trystan\",\n            \"state\": \"Port Burdette\",\n            \"zip\": \"73982-0380\",\n            \"country\": \"Poland\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Dolores eos tempora quos quod fuga soluta aut molestiae.\",\n                \"sku\": \"82989324\",\n                \"quantity\": 62.05,\n                \"price\": 49.91,\n                \"discount\": 20,\n                \"total\": 3076.92\n            },\n            {\n                \"description\": \"Sunt culpa rerum consequuntur velit architecto.\",\n                \"sku\": \"17874678\",\n                \"quantity\": 13.12,\n                \"price\": 6.29,\n                \"discount\": 0,\n                \"total\": 82.52\n            },\n            {\n                \"description\": \"Velit quod quis in non ut.\",\n                \"sku\": \"86245832\",\n                \"quantity\": 55.65,\n                \"price\": 41.05,\n                \"discount\": 20,\n                \"total\": 2264.43\n            }\n        ]\n    },\n    {\n        \"uuid\": \"7ed311f2-a3cf-48e2-950c-5f7d4b58651d\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Mrs. Jena Ondricka I\",\n            \"email\": \"waelchi.enos@example.net\",\n            \"phone\": \"(928) 541-7266\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Prof. Fatima Quigley MD\",\n            \"email\": \"mazie41@example.com\",\n            \"phone\": \"240-805-0116\",\n            \"tax_id\": \"38410711489\"\n        },\n        \"shipping_address\": {\n            \"address\": \"456 Russ Fords Apt. 133\\nCarterside, TX 55082-2988\",\n            \"apartment_number\": \"955\",\n            \"city\": \"Doyleberg\",\n            \"state\": \"Port Olaf\",\n            \"zip\": \"00368-7594\",\n            \"country\": \"Mongolia\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Voluptates corrupti nemo est fuga non.\",\n                \"sku\": \"19179319\",\n                \"quantity\": 52.39,\n                \"price\": 46.61,\n                \"discount\": 0,\n                \"total\": 2441.9\n            }\n        ]\n    },\n    {\n        \"uuid\": \"cbcfe70c-f157-4765-8f94-951292a31008\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Prof. Camryn Gutmann\",\n            \"email\": \"marty.hodkiewicz@example.com\",\n            \"phone\": \"757-718-0003\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Ms. Drew Schowalter DDS\",\n            \"email\": \"nmuller@example.com\",\n            \"phone\": \"1-631-705-5695\",\n            \"tax_id\": \"89287413109\"\n        },\n        \"shipping_address\": {\n            \"address\": \"51680 Wehner Locks Apt. 464\\nLake Quentin, MI 18682-4310\",\n            \"apartment_number\": \"143\",\n            \"city\": \"East Isabel\",\n            \"state\": \"Kaleyberg\",\n            \"zip\": \"55678-7681\",\n            \"country\": \"Tokelau\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Quibusdam omnis odit ut error tempora enim similique.\",\n                \"sku\": \"97947640\",\n                \"quantity\": 93.6,\n                \"price\": 80.25,\n                \"discount\": 0,\n                \"total\": 7511.4\n            },\n            {\n                \"description\": \"Aspernatur qui minima est facere qui blanditiis.\",\n                \"sku\": \"51916245\",\n                \"quantity\": 41.6,\n                \"price\": 4.96,\n                \"discount\": 0,\n                \"total\": 206.34\n            },\n            {\n                \"description\": \"Assumenda nam reiciendis nesciunt eveniet consectetur adipisci.\",\n                \"sku\": \"10427699\",\n                \"quantity\": 28.19,\n                \"price\": 98.19,\n                \"discount\": 30,\n                \"total\": 2737.98\n            },\n            {\n                \"description\": \"Labore doloribus et quis consequatur.\",\n                \"sku\": \"26938167\",\n                \"quantity\": 69.16,\n                \"price\": 61.57,\n                \"discount\": 30,\n                \"total\": 4228.18\n            },\n            {\n                \"description\": \"Vitae non delectus ullam asperiores aut qui quia.\",\n                \"sku\": \"34576745\",\n                \"quantity\": 66.59,\n                \"price\": 43.58,\n                \"discount\": 15,\n                \"total\": 2886.99\n            },\n            {\n                \"description\": \"Non tempora nihil sit quod.\",\n                \"sku\": \"85070105\",\n                \"quantity\": 53.42,\n                \"price\": 77.03,\n                \"discount\": 0,\n                \"total\": 4114.94\n            },\n            {\n                \"description\": \"Voluptatibus vitae atque voluptas delectus omnis.\",\n                \"sku\": \"21126905\",\n                \"quantity\": 78.8,\n                \"price\": 17.14,\n                \"discount\": 0,\n                \"total\": 1350.63\n            }\n        ]\n    },\n    {\n        \"uuid\": \"5bf4c0eb-33b9-473b-b401-2a9460d1b459\",\n        \"status\": \"completed\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Prof. Tyrese Hill\",\n            \"email\": \"glenda.beatty@example.org\",\n            \"phone\": \"+1.859.697.7864\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Meggie Konopelski\",\n            \"email\": \"mikayla31@example.com\",\n            \"phone\": \"(720) 288-7457\",\n            \"tax_id\": \"17052253976\"\n        },\n        \"shipping_address\": {\n            \"address\": \"64907 Herman Views\\nCharitytown, NV 94068\",\n            \"apartment_number\": \"85353\",\n            \"city\": \"New Mckenzieburgh\",\n            \"state\": \"Cyrusside\",\n            \"zip\": \"54318-9069\",\n            \"country\": \"Kuwait\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Praesentium dolorem voluptatem facere ut qui sint et.\",\n                \"sku\": \"19680736\",\n                \"quantity\": 97.98,\n                \"price\": 90.79,\n                \"discount\": 0,\n                \"total\": 8895.6\n            },\n            {\n                \"description\": \"Dicta laudantium vel et aspernatur corrupti odit.\",\n                \"sku\": \"33078463\",\n                \"quantity\": 59.68,\n                \"price\": 72.07,\n                \"discount\": 15,\n                \"total\": 4286.14\n            },\n            {\n                \"description\": \"Sit incidunt commodi tempore eum minima sint ipsum odio.\",\n                \"sku\": \"42826272\",\n                \"quantity\": 26.93,\n                \"price\": 51.9,\n                \"discount\": 0,\n                \"total\": 1397.67\n            },\n            {\n                \"description\": \"Quos repellat hic accusamus et quaerat omnis.\",\n                \"sku\": \"59738952\",\n                \"quantity\": 96.62,\n                \"price\": 50.56,\n                \"discount\": 0,\n                \"total\": 4885.11\n            },\n            {\n                \"description\": \"Consequatur est accusantium omnis beatae beatae iusto.\",\n                \"sku\": \"46665855\",\n                \"quantity\": 78.55,\n                \"price\": 24.64,\n                \"discount\": 0,\n                \"total\": 1935.47\n            },\n            {\n                \"description\": \"Adipisci laborum velit eaque et dolorem iste.\",\n                \"sku\": \"60657880\",\n                \"quantity\": 17.01,\n                \"price\": 58.16,\n                \"discount\": 0,\n                \"total\": 989.3\n            },\n            {\n                \"description\": \"Sequi et et enim vel.\",\n                \"sku\": \"10169196\",\n                \"quantity\": 91.72,\n                \"price\": 42.13,\n                \"discount\": 0,\n                \"total\": 3864.16\n            },\n            {\n                \"description\": \"Placeat iusto ut et.\",\n                \"sku\": \"83207914\",\n                \"quantity\": 2.41,\n                \"price\": 74.32,\n                \"discount\": 20,\n                \"total\": 159.11\n            },\n            {\n                \"description\": \"Nobis et enim eum sunt.\",\n                \"sku\": \"26888645\",\n                \"quantity\": 32.08,\n                \"price\": 73.1,\n                \"discount\": 25,\n                \"total\": 2320.05\n            }\n        ]\n    },\n    {\n        \"uuid\": \"8d4dc083-03e3-48ec-9062-3b39a71f959d\",\n        \"status\": \"cancelled\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Markus Stark II\",\n            \"email\": \"gleichner.shany@example.com\",\n            \"phone\": \"+1-617-354-1512\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Brigitte Bogisich\",\n            \"email\": \"witting.stanley@example.org\",\n            \"phone\": \"1-479-674-5953\",\n            \"tax_id\": \"40624672226\"\n        },\n        \"shipping_address\": {\n            \"address\": \"11874 Alice Fall\\nSydneeton, OK 85874\",\n            \"apartment_number\": \"14846\",\n            \"city\": \"New Jerel\",\n            \"state\": \"Jonastown\",\n            \"zip\": \"76745\",\n            \"country\": \"Western Sahara\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Et quae tenetur numquam perferendis eligendi sit a hic.\",\n                \"sku\": \"79394465\",\n                \"quantity\": 97.18,\n                \"price\": 36.12,\n                \"discount\": 20,\n                \"total\": 3490.14\n            },\n            {\n                \"description\": \"Tempora optio in consectetur qui aliquam qui laboriosam.\",\n                \"sku\": \"75082145\",\n                \"quantity\": 66.18,\n                \"price\": 65.08,\n                \"discount\": 25,\n                \"total\": 4281.99\n            },\n            {\n                \"description\": \"Voluptatibus sit ex vel.\",\n                \"sku\": \"72159091\",\n                \"quantity\": 8.38,\n                \"price\": 16.86,\n                \"discount\": 0,\n                \"total\": 141.29\n            }\n        ]\n    },\n    {\n        \"uuid\": \"38542971-9991-406e-aa11-9c316e0094f7\",\n        \"status\": \"completed\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Lucinda Runolfsson\",\n            \"email\": \"mohammed91@example.org\",\n            \"phone\": \"469.559.1382\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Braxton Buckridge\",\n            \"email\": \"mfritsch@example.org\",\n            \"phone\": \"+1.458.989.2758\",\n            \"tax_id\": \"24491607849\"\n        },\n        \"shipping_address\": {\n            \"address\": \"1473 Austin Rest\\nBrannonbury, KY 40407-2152\",\n            \"apartment_number\": \"103\",\n            \"city\": \"Lake Trishatown\",\n            \"state\": \"West Clarissa\",\n            \"zip\": \"59274\",\n            \"country\": \"Montserrat\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Eum libero tempora cum aut dolorem amet et.\",\n                \"sku\": \"67465917\",\n                \"quantity\": 17.22,\n                \"price\": 76.02,\n                \"discount\": 30,\n                \"total\": 1279.06\n            },\n            {\n                \"description\": \"Possimus minima iusto libero ex occaecati.\",\n                \"sku\": \"14696127\",\n                \"quantity\": 78.77,\n                \"price\": 78.35,\n                \"discount\": 0,\n                \"total\": 6171.63\n            },\n            {\n                \"description\": \"Consequatur ex dolores dolorem sapiente sit assumenda deserunt labore.\",\n                \"sku\": \"62202479\",\n                \"quantity\": 26.93,\n                \"price\": 86.31,\n                \"discount\": 0,\n                \"total\": 2324.33\n            }\n        ]\n    },\n    {\n        \"uuid\": \"99546b30-a08e-49f6-b3ad-a5af0a12428d\",\n        \"status\": \"pending\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Bryana Pacocha\",\n            \"email\": \"mosciski.rafael@example.net\",\n            \"phone\": \"+1-484-417-6248\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Edgardo Howell\",\n            \"email\": \"tod.dickinson@example.org\",\n            \"phone\": \"520-243-5553\",\n            \"tax_id\": \"88332387591\"\n        },\n        \"shipping_address\": {\n            \"address\": \"966 Tyree Cliffs Suite 767\\nLake Sydnieburgh, HI 88800-4747\",\n            \"apartment_number\": \"950\",\n            \"city\": \"Port Augustinemouth\",\n            \"state\": \"Lake Sonia\",\n            \"zip\": \"90292-2625\",\n            \"country\": \"Qatar\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Odit voluptates error quisquam deserunt.\",\n                \"sku\": \"73070417\",\n                \"quantity\": 78.74,\n                \"price\": 50.3,\n                \"discount\": 0,\n                \"total\": 3960.62\n            },\n            {\n                \"description\": \"Temporibus est dolore quia in deleniti.\",\n                \"sku\": \"99411283\",\n                \"quantity\": 44.07,\n                \"price\": 17.83,\n                \"discount\": 0,\n                \"total\": 785.77\n            }\n        ]\n    },\n    {\n        \"uuid\": \"8ec4091f-e264-44f8-881f-5a732e0b5526\",\n        \"status\": \"completed\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Tavares Bartoletti\",\n            \"email\": \"ole98@example.com\",\n            \"phone\": \"+1-986-516-7962\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Jovan Reichel\",\n            \"email\": \"joanie41@example.org\",\n            \"phone\": \"1-323-287-1612\",\n            \"tax_id\": \"08539288967\"\n        },\n        \"shipping_address\": {\n            \"address\": \"901 Aiden Locks Apt. 390\\nNew Justen, DC 47379-8236\",\n            \"apartment_number\": \"886\",\n            \"city\": \"Lake Deronview\",\n            \"state\": \"Lake Shane\",\n            \"zip\": \"02724-0419\",\n            \"country\": \"Namibia\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Ipsum et illo et omnis accusamus voluptatibus explicabo.\",\n                \"sku\": \"85210091\",\n                \"quantity\": 28.16,\n                \"price\": 35.95,\n                \"discount\": 10,\n                \"total\": 1002.35\n            }\n        ]\n    },\n    {\n        \"uuid\": \"33536211-9c74-49bf-a967-e95c4c614405\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Theodora Franecki\",\n            \"email\": \"octavia92@example.com\",\n            \"phone\": \"+1-812-594-1992\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Cecilia Labadie\",\n            \"email\": \"zrohan@example.org\",\n            \"phone\": \"878-742-4982\",\n            \"tax_id\": \"75708682378\"\n        },\n        \"shipping_address\": {\n            \"address\": \"823 Daugherty Harbors\\nEast Jaylenbury, NE 05004\",\n            \"apartment_number\": \"41432\",\n            \"city\": \"Port Desmond\",\n            \"state\": \"Jasttown\",\n            \"zip\": \"29974\",\n            \"country\": \"Bermuda\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Dolores quod voluptas nihil veritatis ducimus.\",\n                \"sku\": \"49998088\",\n                \"quantity\": 1.92,\n                \"price\": 55.9,\n                \"discount\": 0,\n                \"total\": 107.33\n            },\n            {\n                \"description\": \"Et sunt consectetur est.\",\n                \"sku\": \"27933324\",\n                \"quantity\": 52.98,\n                \"price\": 24.83,\n                \"discount\": 0,\n                \"total\": 1315.49\n            },\n            {\n                \"description\": \"Aut quia iste impedit architecto non labore.\",\n                \"sku\": \"30327013\",\n                \"quantity\": 47.73,\n                \"price\": 59.65,\n                \"discount\": 0,\n                \"total\": 2847.09\n            },\n            {\n                \"description\": \"Voluptatem asperiores et est fugiat ratione dolor commodi.\",\n                \"sku\": \"66216633\",\n                \"quantity\": 58.35,\n                \"price\": 48.72,\n                \"discount\": 0,\n                \"total\": 2842.81\n            },\n            {\n                \"description\": \"Eum dolorem nobis et tenetur.\",\n                \"sku\": \"67030608\",\n                \"quantity\": 69.47,\n                \"price\": 59.9,\n                \"discount\": 30,\n                \"total\": 4131.25\n            },\n            {\n                \"description\": \"Ea autem natus quidem repellat cupiditate qui et.\",\n                \"sku\": \"83093873\",\n                \"quantity\": 91.82,\n                \"price\": 26.87,\n                \"discount\": 25,\n                \"total\": 2442.2\n            },\n            {\n                \"description\": \"Voluptatem mollitia voluptates suscipit eum.\",\n                \"sku\": \"85065325\",\n                \"quantity\": 30.57,\n                \"price\": 52.52,\n                \"discount\": 0,\n                \"total\": 1605.54\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "Filter by Tax ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders?tax_id=93414079625",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "tax_id",
+									"value": "93414079625"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:45:42 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:45:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"67c8e8ca-41c5-40b3-818d-d4cecb83d722\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Claud Koss\",\n            \"email\": \"adella06@example.com\",\n            \"phone\": \"570-222-9816\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Lorenza Shanahan\",\n            \"email\": \"favian84@example.net\",\n            \"phone\": \"+14697681668\",\n            \"tax_id\": \"93414079625\"\n        },\n        \"shipping_address\": {\n            \"address\": \"815 Grady Prairie\\nOndrickaside, WV 74504-1576\",\n            \"apartment_number\": \"662\",\n            \"city\": \"Lake Adalberto\",\n            \"state\": \"Mrazmouth\",\n            \"zip\": \"89158-9801\",\n            \"country\": \"Belgium\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Voluptatum pariatur saepe ab ad vitae officia mollitia natus.\",\n                \"sku\": \"40250054\",\n                \"quantity\": 57.28,\n                \"price\": 34.23,\n                \"discount\": 25,\n                \"total\": 1935.69\n            },\n            {\n                \"description\": \"Cum omnis quam quibusdam dolor voluptatem beatae.\",\n                \"sku\": \"77774621\",\n                \"quantity\": 95.12,\n                \"price\": 52.16,\n                \"discount\": 5,\n                \"total\": 4956.46\n            },\n            {\n                \"description\": \"Voluptates qui optio sint sit.\",\n                \"sku\": \"78823253\",\n                \"quantity\": 36.59,\n                \"price\": 47.67,\n                \"discount\": 0,\n                \"total\": 1744.25\n            },\n            {\n                \"description\": \"Consequatur tempora ex ut quia.\",\n                \"sku\": \"25341421\",\n                \"quantity\": 63.69,\n                \"price\": 2.56,\n                \"discount\": 10,\n                \"total\": 153.05\n            },\n            {\n                \"description\": \"Vel quae enim et reprehenderit rem sed.\",\n                \"sku\": \"22461773\",\n                \"quantity\": 97.11,\n                \"price\": 73.13,\n                \"discount\": 0,\n                \"total\": 7101.65\n            },\n            {\n                \"description\": \"Incidunt ut officiis qui corrupti autem debitis repudiandae.\",\n                \"sku\": \"13541494\",\n                \"quantity\": 7.99,\n                \"price\": 25.86,\n                \"discount\": 25,\n                \"total\": 181.62\n            }\n        ]\n    }\n]"
+				},
+				{
+					"name": "Filter by SKU",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders?sku=77774621",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders"
+							],
+							"query": [
+								{
+									"key": "sku",
+									"value": "77774621"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:46:16 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:46:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"uuid\": \"67c8e8ca-41c5-40b3-818d-d4cecb83d722\",\n        \"status\": \"processing\",\n        \"created_at\": \"2024-05-08 19:37:57\",\n        \"updated_at\": \"2024-05-08 19:37:57\",\n        \"deleted_at\": null,\n        \"customer_detail\": {\n            \"external_id\": null,\n            \"name\": \"Claud Koss\",\n            \"email\": \"adella06@example.com\",\n            \"phone\": \"570-222-9816\"\n        },\n        \"invoice_detail\": {\n            \"name\": \"Lorenza Shanahan\",\n            \"email\": \"favian84@example.net\",\n            \"phone\": \"+14697681668\",\n            \"tax_id\": \"93414079625\"\n        },\n        \"shipping_address\": {\n            \"address\": \"815 Grady Prairie\\nOndrickaside, WV 74504-1576\",\n            \"apartment_number\": \"662\",\n            \"city\": \"Lake Adalberto\",\n            \"state\": \"Mrazmouth\",\n            \"zip\": \"89158-9801\",\n            \"country\": \"Belgium\"\n        },\n        \"products\": [\n            {\n                \"description\": \"Voluptatum pariatur saepe ab ad vitae officia mollitia natus.\",\n                \"sku\": \"40250054\",\n                \"quantity\": 57.28,\n                \"price\": 34.23,\n                \"discount\": 25,\n                \"total\": 1935.69\n            },\n            {\n                \"description\": \"Cum omnis quam quibusdam dolor voluptatem beatae.\",\n                \"sku\": \"77774621\",\n                \"quantity\": 95.12,\n                \"price\": 52.16,\n                \"discount\": 5,\n                \"total\": 4956.46\n            },\n            {\n                \"description\": \"Voluptates qui optio sint sit.\",\n                \"sku\": \"78823253\",\n                \"quantity\": 36.59,\n                \"price\": 47.67,\n                \"discount\": 0,\n                \"total\": 1744.25\n            },\n            {\n                \"description\": \"Consequatur tempora ex ut quia.\",\n                \"sku\": \"25341421\",\n                \"quantity\": 63.69,\n                \"price\": 2.56,\n                \"discount\": 10,\n                \"total\": 153.05\n            },\n            {\n                \"description\": \"Vel quae enim et reprehenderit rem sed.\",\n                \"sku\": \"22461773\",\n                \"quantity\": 97.11,\n                \"price\": 73.13,\n                \"discount\": 0,\n                \"total\": 7101.65\n            },\n            {\n                \"description\": \"Incidunt ut officiis qui corrupti autem debitis repudiandae.\",\n                \"sku\": \"13541494\",\n                \"quantity\": 7.99,\n                \"price\": 25.86,\n                \"discount\": 25,\n                \"total\": 181.62\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get single Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/17bea0a9-609d-44c0-991f-11c087ba78ee",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"17bea0a9-609d-44c0-991f-11c087ba78ee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get single Order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "api-key"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/dc10c56f-60e4-4a71-8a5b-6417769f5634",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"dc10c56f-60e4-4a71-8a5b-6417769f5634"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:47:21 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:47:20 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"uuid\": \"dc10c56f-60e4-4a71-8a5b-6417769f5634\",\n    \"status\": \"cancelled\",\n    \"created_at\": \"2024-05-08 19:37:57\",\n    \"updated_at\": \"2024-05-08 19:37:57\",\n    \"deleted_at\": null,\n    \"customer_detail\": {\n        \"external_id\": null,\n        \"name\": \"Elna Bernhard\",\n        \"email\": \"arne78@example.com\",\n        \"phone\": \"+1-770-880-0459\"\n    },\n    \"invoice_detail\": {\n        \"name\": \"Iva Bergstrom\",\n        \"email\": \"jkerluke@example.com\",\n        \"phone\": \"+13087752106\",\n        \"tax_id\": \"55966748830\"\n    },\n    \"shipping_address\": {\n        \"address\": \"805 Cleta Lodge\\nLakintown, SD 31961\",\n        \"apartment_number\": \"9693\",\n        \"city\": \"Dewaynebury\",\n        \"state\": \"North Natalie\",\n        \"zip\": \"97348\",\n        \"country\": \"Guadeloupe\"\n    },\n    \"products\": [\n        {\n            \"description\": \"Et rerum ullam doloremque.\",\n            \"sku\": \"39666678\",\n            \"quantity\": 52.09,\n            \"price\": 6.91,\n            \"discount\": 20,\n            \"total\": 339.94\n        }\n    ]\n}"
+				},
+				{
+					"name": "Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/17bea0a9-609d-44c0-991f-11c087ba78ee",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"17bea0a9-609d-44c0-991f-11c087ba78ee"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 17:10:41 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 17:10:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Order not found\"\n}"
+				},
+				{
+					"name": "Get deleted order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-API-Key",
+								"value": "{{api-key}}"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/29caa873-51c2-49b7-8f3a-f0718ed002d8?deleted=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"29caa873-51c2-49b7-8f3a-f0718ed002d8"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:48:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:48:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"uuid\": \"29caa873-51c2-49b7-8f3a-f0718ed002d8\",\n    \"status\": \"processing\",\n    \"created_at\": \"2024-05-08 19:37:57\",\n    \"updated_at\": \"2024-05-08 19:48:15\",\n    \"deleted_at\": \"2024-05-08 19:48:15\",\n    \"customer_detail\": {\n        \"external_id\": null,\n        \"name\": \"Nathan Mann DDS\",\n        \"email\": \"herzog.zula@example.net\",\n        \"phone\": \"1-806-786-8642\"\n    },\n    \"invoice_detail\": {\n        \"name\": \"Makenzie Littel\",\n        \"email\": \"aufderhar.leonel@example.com\",\n        \"phone\": \"+1-352-366-6243\",\n        \"tax_id\": \"52122963141\"\n    },\n    \"shipping_address\": {\n        \"address\": \"69774 Henri Gardens Suite 158\\nGregoryborough, MO 44300-4020\",\n        \"apartment_number\": \"914\",\n        \"city\": \"Schusterberg\",\n        \"state\": \"South Fredrickfort\",\n        \"zip\": \"09393\",\n        \"country\": \"Nigeria\"\n    },\n    \"products\": [\n        {\n            \"description\": \"Aperiam unde ut commodi et expedita.\",\n            \"sku\": \"91655396\",\n            \"quantity\": 27.16,\n            \"price\": 49.86,\n            \"discount\": 0,\n            \"total\": 1354.2\n        },\n        {\n            \"description\": \"Itaque enim repellat repellat nobis error qui temporibus.\",\n            \"sku\": \"66031120\",\n            \"quantity\": 80.13,\n            \"price\": 65.22,\n            \"discount\": 5,\n            \"total\": 5221.08\n        },\n        {\n            \"description\": \"Quisquam iure ducimus accusantium rerum et voluptate.\",\n            \"sku\": \"81550881\",\n            \"quantity\": 7.98,\n            \"price\": 2.07,\n            \"discount\": 0,\n            \"total\": 16.52\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/50e40d10-f906-4e34-b57f-d63230f9efef",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"50e40d10-f906-4e34-b57f-d63230f9efef"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Order",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/orders/561fa701-820f-43e9-8105-56b4ad849ac8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"orders",
+								"561fa701-820f-43e9-8105-56b4ad849ac8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:36:47 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 May 2024 19:36:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.10"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"uuid\": \"561fa701-820f-43e9-8105-56b4ad849ac8\",\n    \"status\": \"pending\",\n    \"created_at\": \"2024-05-08 19:31:58\",\n    \"updated_at\": \"2024-05-08 19:36:47\",\n    \"deleted_at\": \"2024-05-08 19:36:47\",\n    \"customer_detail\": {\n        \"external_id\": null,\n        \"name\": \"Ms. Nelda Beier\",\n        \"email\": \"amcclure@example.org\",\n        \"phone\": \"(551) 752-1543\"\n    },\n    \"invoice_detail\": {\n        \"name\": \"Rebeca Schuster\",\n        \"email\": \"jarret.muller@example.org\",\n        \"phone\": \"239.382.0153\",\n        \"tax_id\": \"53437718420\"\n    },\n    \"shipping_address\": {\n        \"address\": \"329 Gracie Shoals Suite 519\\nKlingburgh, GA 56946-3572\",\n        \"apartment_number\": \"29887\",\n        \"city\": \"West Dollyview\",\n        \"state\": \"Lake Eliland\",\n        \"zip\": \"87791-5245\",\n        \"country\": \"Lesotho\"\n    },\n    \"products\": [\n        {\n            \"description\": \"Optio voluptate molestiae qui nesciunt repudiandae eius.\",\n            \"sku\": \"44308363\",\n            \"quantity\": 64.35,\n            \"price\": 30.28,\n            \"discount\": 0,\n            \"total\": 1948.52\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api-key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-API-Key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
