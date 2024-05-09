@@ -1,7 +1,13 @@
 {
-    "name": "laravel/laravel",
+    "name": "cfrancisco/orders-management-api",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "authors": [
+        {
+            "name": "Francisco Carribero",
+            "email": "francisco.carribero@gmail.com"
+        }
+    ],
+    "description": "A demo of a Orders management API made with Laravel",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
